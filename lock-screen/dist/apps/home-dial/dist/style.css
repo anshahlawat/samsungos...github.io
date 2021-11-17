@@ -1,0 +1,84 @@
+body {
+  background-color: #fffcf9;
+  overflow: hidden;
+  text-align: center;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+
+
+text,
+tspan {
+  font-family: "din-condensed-web", sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  text-anchor: middle;
+}
+
+#dialMarkerContainer,
+#centerGroup {
+  pointer-events: none;
+}
+
+#dropLabel {
+  letter-spacing: -2px;
+  font-size: 56px;
+}
+
+#centerLabel,
+#centerValue {
+  letter-spacing: -6px;
+  font-size: 132px
+}
+
+#centerLabel tspan {
+  letter-spacing: -2px;
+  font-size: 52px;
+}
+
+text {
+  text-anchor: middle;
+}
+
+.icon {
+  cursor: pointer;
+  stroke: rgba(0, 0, 0, 0);
+  stroke-width: 20;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#iconLabel0 tspan,
+#iconLabel1 tspan {
+  font-size: 23px;
+}
+
+#iconLabel2 tspan {
+  font-size: 23px;
+}
+
+.selectionLabel {
+  font-family: "filson-soft", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+#powerBtnHit{
+  cursor:pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#powerBtn{
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

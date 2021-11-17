@@ -1,0 +1,65 @@
+.text-editor{width:100%;max-width:1440px;margin:0 auto;direction:ltr}
+.text-editor--margin-top-normal{padding-top:24px}
+.text-editor--margin-top-wide{padding-top:40px}
+.text-editor__inner--common-border{border-top:1px solid #d0d0d0}
+.text-editor__column-wrap{width:100%}
+.text-editor__wrap{display:block;max-width:1440px;margin:0 auto;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:21px 6.75% 20px}
+.text-editor__wrap--support-box{padding:28px 34px}
+.text-editor__wrap--column-2{padding:21px 6.75% 30px}
+.text-editor__wrap--column-2 .text-editor__column-wrap{width:50%}
+.text-editor__wrap--column-3{padding:31px 13.28% 27px 6.75%}
+.text-editor__wrap--column-3 .text-editor__column-wrap{width:33.333333%}
+.text-editor__headline-wrap{padding:0 12px}
+.text-editor__headline{font-size:32px;line-height:1.33}
+.text-editor__contents-wrap{display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;font-size:12px;line-height:1.33}
+.text-editor--description-text-size-large{font-size:18px}
+.text-editor--description-text-size-medium{font-size:14px}
+.text-editor--description-text-size-small{font-size:12px}
+.text-editor__column{display:-webkit-box;display:-ms-flexbox;display:flex;padding:0 12px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;word-wrap:break-word;line-height:1.33}
+.text-editor__column p{margin-top:16px;line-height:1.33}
+.text-editor__column p:first-of-type{margin-top:0}
+.text-editor__column a{color:#1428a0;text-decoration:underline}
+.text-editor__column a:hover{text-decoration:underline}
+.text-editor__column ol{line-height:1.33;margin:16px 0 0 18.23px}
+.text-editor__column ol li{list-style:decimal}
+.text-editor__column ul{line-height:1.33;margin:16px 0 0 20.23px}
+.text-editor__column ul li{list-style:disc}
+.text-editor--padding-top-normal .text-editor__headline-wrap{margin-bottom:24px}
+.text-editor--padding-top-wide .text-editor__headline-wrap{margin-bottom:40px}
+.text-editor--support-box-off{max-width:1440px;margin:0 auto}
+.text-editor--support-box-off .text-editor__wrap{padding:0}
+.text-editor--support-box-off .text-editor__wrap .text-editor__headline-wrap{padding:0}
+.text-editor--support-box-off .text-editor__wrap .text-editor__column{padding:0}
+.text-editor--support-box-on{max-width:1440px;margin:0 auto}
+.text-editor--support-box-on .text-editor__inner{background-color:#fafafa;border:1px solid #f2f2f2}
+.aem-AuthorLayer-Edit .text-editor.text-editor--support-box-off .text-editor__inner{min-height:40px}
+.bg-white .text-editor__wrap,.bg-light-gray .text-editor__wrap,.bg-transparent .text-editor__wrap{color:#313131}
+.bg-black .text-editor__wrap,.bg-dark-gray .text-editor__wrap{color:#eee}
+@media only screen and (min-width:768px) and (max-width:1440px){.text-editor--margin-top-normal{padding-top:1.66666667vw}
+.text-editor--margin-top-wide{padding-top:2.77777778vw}
+.text-editor--padding-top-normal .text-editor__headline-wrap{margin-bottom:1.66666667vw}
+.text-editor--padding-top-wide .text-editor__headline-wrap{margin-bottom:2.77777778vw}
+.text-editor__wrap--support-box{padding:1.94444444vw 2.36111111vw 1.94444444vw 2.36111111vw}
+.text-editor__headline{font-size:2.22222222vw}
+}
+@media only screen and (max-width:767px){.text-editor--margin-top-normal{padding-top:6.66666667vw}
+.text-editor--margin-top-wide{padding-top:11.11111111vw}
+.text-editor__wrap{padding:28px 16px 26px}
+.text-editor__wrap--support-box{padding:3.88888889vw 5.55555556vw 3.88888889vw 5.55555556vw}
+.text-editor__wrap:first-of-type{margin-top:0}
+.text-editor__wrap--column-2{padding:28px 16px 26px}
+.text-editor__wrap--column-2 .text-editor__column-wrap{width:100%}
+.text-editor__wrap--column-3{padding:28px 16px 26px}
+.text-editor__wrap--column-3 .text-editor__column-wrap{width:100%}
+.text-editor__headline-wrap{padding:0 2.13%}
+.text-editor__headline{font-size:5.27777778vw}
+.text-editor__contents-wrap{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.text-editor .text-editor__column-wrap{margin-top:8.88888889vw}
+.text-editor .text-editor__column-wrap:first-of-type{margin-top:0}
+.text-editor__column{padding:0 2.13%}
+.text-editor__column p{margin-top:12px;line-height:1.2}
+.text-editor__column ol{margin-top:12px;line-height:1.2}
+.text-editor__column ul{margin-top:12px;line-height:1.2}
+.text-editor--padding-top-normal .text-editor__headline-wrap{margin-bottom:6.66666667vw}
+.text-editor--padding-top-wide .text-editor__headline-wrap{margin-bottom:11.11111111vw}
+}

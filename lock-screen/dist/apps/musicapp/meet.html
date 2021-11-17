@@ -1,0 +1,44 @@
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <script src='https://8x8.vc/external_api.js' async></script>
+        <style>html, body, #jaas-container { height: 100%; }</style>
+        <script type="text/javascript">
+          window.onload = () => {
+            const api = new JitsiMeetExternalAPI("8x8.vc", {
+              roomName: "vpaas-magic-cookie-837ce901b5b343ccaabfb2b73d010c8d/SampleAppSurgicalSoundsRequestIronically",
+              parentNode: document.querySelector('#jaas-container')
+            });
+          }
+        </script>
+<script>
+  var button = document.querySelector('#start');
+  var container = document.querySelector('#jitsi-container');
+  var api = null;
+  
+  button.addEventListener('click', () => {
+      var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      var stringLength = 30;
+  
+      function pickRandom() {
+      return possible[Math.floor(Math.random() * possible.length)];
+      }
+  
+  var randomString = Array.apply(null, Array(stringLength)).map(pickRandom).join('');
+  
+      var domain = "meet.jit.si";
+      var options = {
+          "roomName": randomString,
+          "parentNode": container,
+          "width": 100%,
+          "height": 100%,
+      };
+      api = new JitsiMeetExternalAPI(domain, options);
+  });
+  
+  </script>
+      </head>
+      <body><div id="jaas-container" /></body>
+    </html>
+  

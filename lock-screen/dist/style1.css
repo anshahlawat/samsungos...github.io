@@ -1,0 +1,280 @@
+@import url("css/common.css");
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url("wallpaper/(4.).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 45px;
+    background-color:  white;
+color:white;
+    backdrop-filter: blur(70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer img{
+    height: 65%;
+    transition: 0.1s linear transform;
+    margin: 0 10px;
+}
+footer img:hover{
+    transform: scale(1.05);
+}
+footer img:active{
+    transform: scale(0.9);
+}
+
+.start{
+    height: 44vw;
+    width: 52vw;
+    left: 24.4vw;
+    background-color:  white;
+    backdrop-filter: blur(70px);
+    position: fixed;
+    /* bottom: 30px; */
+    bottom: -120vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #00000011;
+    transition: 1s linear bottom;
+    padding: 20px;
+margin : -10px;
+    z-index: 100000;
+}
+.start .title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #595857;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+.start .title .more{
+    background-color: #fff;
+    padding: 1px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+.start .appDIv{
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    /* background-color: var(--blurBg-b); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.start .appDIv .app{
+    height: auto;
+    width: auto;
+    /* background-color: lime; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 17px;
+    transition: 0.1s linear transform;
+}
+.start .appDIv .app:active{
+    transform: scale(0.9);
+}
+.start .appDIv .app img{
+    height: 40px;
+    width: 40px;
+    border-radius:15px;
+}
+.start .appDIv .app p{
+    text-align: center;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    color:#83878d;
+}
+
+.start .recommended{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 8px 0;
+}
+.start .recommended .one{
+    width: 47%;
+    height: 80px;
+    /* background-color: var(--blurBg-b); */
+    margin: -5px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.start .recommended .one img{
+    margin-left: 10px;
+    height: 40px;
+    border-radius:15px;
+}
+.start .recommended .one p{
+    color: #83878d;
+    margin-left: 10px;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+}
+.start .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+    border-radius: 10px;
+       }
+.start .bottom .name .profile{
+    height: 40px;
+    width:40px;
+    border-radius: 50%;
+    margin-left: 11px;
+    margin-right: 10px;
+}
+.start .bottom .name{
+    display: flex;
+    align-items: center
+}
+.start .bottom .name p{
+    color: black;
+    letter-spacing: 0.5px;
+}
+.start .bottom .power{
+    height: 40px;
+    margin-right: 0.5px;
+    margin:5px;
+    padding:5px;
+}
+#window{
+    position: fixed;
+    height: 80vh;
+    width:85vw;
+    background-color:#fff;
+    backdrop-filter: blur(20px);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 8px;
+    z-index: 0;
+    overflow: hidden;
+    transition: 0.07s linear height,0.07s linear width;
+    z-index: 1000;
+}
+#window header{
+
+ height: 24.5px;
+    background-color:  var(--theme-bg-color);;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: 1px solid #ffffff59;;
+    cursor:click;
+}
+#window header .app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#window header .app .appIcon{
+    height: 20px;
+}
+#window header .app p{
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+    font-size: 0.9em;
+}
+#window header .nav{
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#window header .nav img{
+    height: 16px;
+    margin: 0 5px;
+}
+#window iframe{
+    height: calc(100% - 35px);
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:transparent;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 80%;
+  height:80%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+ .popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+ max-height: 96%;
+  overflow: auto;
+}
+appDIv1 img{
+    height: 40px;
+    width: 40px;
+margin:2.2%;
+margin-right:9.5%;
+margin-left:9.5%;
+border-radius:14px;
+}

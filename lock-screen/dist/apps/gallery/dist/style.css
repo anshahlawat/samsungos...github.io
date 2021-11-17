@@ -1,0 +1,81 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+}
+body input, body h1, body a {
+  color: #5a5a5a;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 0px;
+  padding: 0px;
+}
+
+#app {
+  background-color: #282828;
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+}
+#app #card-track {
+  height: 700px;
+  left: 0px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  width: 100%;
+}
+#app #card-track::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+}
+#app #card-track::-webkit-scrollbar-thumb {
+  background-color: #f0f0f0;
+}
+#app #card-track .card {
+  background-position: center;
+  background-size: cover;
+  border: none;
+  box-shadow: 0px 0px 24px 6px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  display: inline-block;
+  height: 600px;
+  margin: 50px;
+  outline: none;
+  position: relative;
+  transition: all 0.25s;
+  width: 350px;
+}
+#app #card-track .card:hover {
+  transform: scale(1.05);
+}
+#app #card-track .card .content {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+#app #card-track .card .content .title {
+  padding: 20px;
+}
+#app #card-track .card .content .title h1 {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 700;
+  position: relative;
+}
+#app #card-track .card .content .title h1:after {
+  background-color: #2196F3;
+  bottom: -15px;
+  content: "";
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 50px;
+}

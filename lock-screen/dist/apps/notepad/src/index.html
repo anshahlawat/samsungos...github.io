@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
+    <script src="https://picturelements.github.io/utils/fontlist.js"></script>
+  </head>
+    <title id="title">untitled</title>
+  <body onclick="document.getElementById('dropdown').style.display='none'">
+    <div id="dropdown">
+      <div class="dropdownitem" onclick="newDoc()">New</div>
+      <div class="dropdownitem" onclick="openD()">Open</div>
+      <div class="dropdownitem" onclick="save()">Save</div>
+      <div class="dropdownitem bottomline" onclick="openPrompt('saveas')">Save As</div>
+      <div class="dropdownitem" onclick="openPrompt('custom','You can never exit PeNote. PeNote exits you.','Exit')">Exit</div>
+      <div class="dropdownitem bottomline" onclick="openPrompt('custom','Ctrl-Z is easier, dude.','Undo')">Undo</div>
+      <div class="dropdownitem" onclick="cutText()">Cut</div>
+      <div class="dropdownitem" onclick="copyText()">Copy</div>
+      <div class="dropdownitem" onclick="openPrompt('custom','JavaScript is shit with paste events. Something about fancy pancy security.','Paste')">Paste</div>
+      <div class="dropdownitem bottomline" onclick="deleteText()">Delete</div>
+      <div class="dropdownitem hidden">Search</div>
+      <div class="dropdownitem hidden">Search Next</div>
+      <div class="dropdownitem" onclick="openPrompt('replace',null,'Replace')">Replace</div>
+      <div class="dropdownitem bottomline" onclick="openPrompt('custom','One does not simply walk into Mordor.','Go to')">Go To</div>
+      <div class="dropdownitem" onclick="selectAll()">Select All</div>
+      <div class="dropdownitem" onclick="toggleWrap()"><span class="checkmark" checked="false">✔</span>Word Wrap</div>
+      <div class="dropdownitem" onclick="openPrompt('font',null,'Font')">Font...</div>
+      <div class="dropdownitem" onclick="toggleBar()"><span class="checkmark" checked="false">✔</span>Status Bar</div>
+      <div class="dropdownitem bottomline" onclick="openPrompt('custom','HELP!','HELP!')">Show Help</div>
+      <div class="dropdownitem" onclick="openPrompt('custom',about,'About PeNote')">About samsung note</div>
+    </div>
+    <div id="content">
+      <div id="header">
+        <div class="headeritem" onclick=showDropdown(this,event)>File</div>
+        <div class="headeritem" onclick=showDropdown(this,event)>Edit</div>
+        <div class="headeritem" onclick=showDropdown(this,event)>Format</div>
+        <div class="headeritem" onclick=showDropdown(this,event)>View</div>
+        <div class="headeritem" onclick=showDropdown(this,event)>Help</div>
+      </div>
+      <textarea id="editarea" wrap="soft" spellcheck="false"></textarea>
+      <div id="footer">
+        <div id="databar">Ln 1, Col 1</div>
+      </div>
+    </div>
+    <div id="shade"></div>
+    <div id="prompt">
+      <div id="actionbar">
+        <div id="prompttitle"></div>
+        <div id="close" onclick=relayClose()>×</div>
+      </div>
+      <div id="promptcontent"></div>
+    </div>
+    <div style="display:none">
+      <div id="save" class="innerprompt">
+        <p id="prompttext" style="margin-top:1vw; margin-bottom:1vw">Save untitled?</p>
+        <div class="buttongroup">
+          <button onclick=save()>Save</button>
+          <button onclick=execBuffer()>Don't save</button>
+          <button onclick=relayClose()>Cancel</button>
+        </div>
+      </div>
+      <div id="saveas" class="innerprompt">
+        <input id="nameinput" placeholder="Name here" onkeyup=checkName()>
+        <p id="prompttext" style="margin-top:0.8vw; color:#a00;">Name cannot be blank.</p>
+        <div id="namebox"></div>
+        <div class="buttongroup">
+          <button id="savebtn" active="false" onclick=relaySave()>Save</button>
+          <button onclick=execBuffer()>Don't save</button>
+          <button onclick=relayClose()>Cancel</button>
+        </div>
+      </div>
+      <div id="open" class="innerprompt">
+        <input id="nameinput" placeholder="Name here" onkeyup=checkName2()>
+        <div id="namebox"></div>
+        <div class="buttongroup">
+          <button id="savebtn" active="false" onclick=openDoc()>Open</button>
+          <buthelp onclick=relayClose()>Cancel</buthelp
+            ton>
+        </div>
+      </div>
+      <div id="replace" class="innerprompt">
+        <p class="tag">Search for:</p>
+        <input>
+        <p class="tag">Replace with:</p>
+        <input>
+        <div class="buttongroup">
+          <button onclick=replace()>Replace all</button>
+          <button onclick=relayClose()>Cancel</button>
+        </div>
+      </div>
+      <div id="custom" class="innerprompt">
+        <p id="prompttext" style="margin-top:1.5vw; margin-bottom:1.5vw"></p>
+        <div class="buttongroup">
+          <button onclick=relayClose()>Close</button>
+        </div>
+      </div>
+      <div id="font" class="innerprompt">
+        <select id="font_select"></select>
+        <select id="size_select"></select>
+        <select id="weight_select">
+          <option style="font-style:normal">normal</option>
+          <option style="font-style:italic">italic</option>
+          <option style="font-weight:bold">bold</option>
+          <option style="font-weight:bold; font-style:italic">bold italic</option>
+        </select>
+        <div class="buttongroup">
+          <button onclick=setFont()>Set</button>
+          <button onclick=relayClose()>Close</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

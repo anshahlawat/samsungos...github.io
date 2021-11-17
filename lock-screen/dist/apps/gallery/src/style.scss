@@ -1,0 +1,99 @@
+$blue: #2196F3;
+
+$boxShadow: 0px 0px 24px 6px rgba(black, 0.08);
+
+@function gray($color){
+  @return rgb($color, $color, $color);
+}
+
+body{
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  
+  input, h1, a {
+    color: gray(90);
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+#app{
+  background-color: gray(40);
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  
+  #card-track{
+    height: 700px;
+    left: 0px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    width: 100%;
+    
+    &::-webkit-scrollbar {
+      height: 0px;
+      width: 0px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: gray(240);
+    }
+    
+    .card{
+      background-position: center;
+      background-size: cover;
+      border: none;
+      box-shadow: $boxShadow;
+      cursor: pointer;
+      display: inline-block;
+      height: 600px;
+      margin: 50px;
+      outline: none;
+      position: relative;
+      transition: all 0.25s;
+      width: 350px;
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+      
+      .content{
+        background-color: rgba(black, 0.1);
+        height: 100%;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        
+        .title{
+          padding: 20px;
+          
+          h1{
+            color: white;
+            font-size: 1.5em;
+            font-weight: 700;
+            position: relative;
+            
+            &:after{
+              background-color: $blue;
+              bottom: -15px;
+              content: "";
+              height: 4px;
+              left: 50%;
+              position: absolute;
+              transform: translateX(-50%);
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

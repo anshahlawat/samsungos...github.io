@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+  background: #090909;
+  color: #fff;
+  font-weight: 300;
+  font-size: 150%;
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+section > div {
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+button {
+  background: #fff;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 15px;
+  font-size: 1.1em;
+  transition: background .10s;
+  bottom: 50px;
+  right: 50px;
+  position: absolute;
+  opacity:0;
+  text-color:#090909;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, .3);
+  transition: background .6s;
+  opacity:1;
+}
+
+.revert {
+  left: 50px;
+  right: auto;
+}
+
+.load {
+  height: 2px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.load div {
+  height: 2px;
+  width: 0;
+  background: #fff;
+}
+
+.install {
+  /* display: flex; */
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  background: #000;
+}
+.install h1 {
+  font-size: 50px;
+  margin: 60px 0 20px;
+}
+.install h2 {
+  flex: 2;
+  color: #888;
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+.install svg {
+  display: flex;
+  flex: 50;
+  width: 50%;
+  max-width: 350px;
+}
+
+.install footer {
+  display: flex;
+  flex: 2;
+  max-width: 700px;
+  width: 90%;
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+.install footer ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+}
+.install footer ul li {
+  display: flex;
+  color: #999;
+  font-size: 12px;
+}
+.install footer ul li.active {
+  color: #fff;
+}
+footer ul li .percent {
+  margin-left: 3px;
+}
+.install .done {
+  color: #0087E5;
+}
+
+
+/* These -prefix-full-screen must be seperated */
+
+:-webkit-full-screen {
+  display: block !important;
+}
+
+:-moz-full-screen {
+  display: block !important;
+}
+
+:full-screen {
+  display: block !important;
+}
+
+:-moz-full-screen #bluescreen {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -320px;
+}

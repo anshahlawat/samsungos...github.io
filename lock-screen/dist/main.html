@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Samsung os</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div id="window">
+<iframe src="https://www.google.com/webhp?igu=1" frameborder="0" id="url-output"></iframe>
+        <header>
+            <div class="app">
+                <img src="icons/images (4).png" class="appIcon">
+<p>Samsung os - Google</p>
+            </div>
+            <div class="nav">
+                <img src="icons/minus.jpg" class="icon press" onclick="minMin()">
+                <img src="icons/square.jpg" class="icon press" onclick="maxMin()">
+                <img src="icons/cross.jpg" class="icon press" onclick="closeWindow()">
+            </div>
+       
+</header>
+    </div>
+    <div class="start">
+        <div class="title">
+            <p class="name">Pinned</p>
+            <p class="more">All Apps</p>
+        </div>
+        <div class="appDIv">
+            <div class="app"  onclick="openWin('icons/files.png','File explorer - Android','apps/file explorer/dist/index.html',80,90,0)">
+                <img src="icons/files.png" alt="" style="border-radius: 50%;">
+                <p>File explorer</p>
+            </div>
+            <div class="app" onclick="openWin('icons/notes.png','Notes - Android','apps/notes/index.html',80,90,0)">
+                <img src="icons/notes.png" alt="" >
+                <p>Notes</p>
+            </div>
+            <div class="app" onclick="openWin('icons/english.png','Reading Books - Android','apps/english/index.html',80,90,0)">
+                <img src="icons/english.png" alt="" >
+                <p>Reading Books</p>
+            </div>
+            <div class="app" onclick="openWin('icons/weather.png','Weather - Android','apps/weather/index.html',80,90,0)">
+                <img src="icons/weather.png" alt="" >
+                <p>Weather</p>
+            </div>
+            
+            <div class="app" onclick="openWin('icons/store.png','Play store - Android','apps/google-grid-store/dist/index.html',85,90,0)">
+                <img src="icons/store.png" alt="" >
+                <p>Play store</p>
+            </div>
+            <div class="app" onclick="openWin('icons/download(2).jpg','Gallery - Android','apps/gallery/dist/index.html',85,90,0)">
+                <img src="icons/download(2).jpg" alt="" >
+                <p>Gallery</p>
+            </div>
+            <div class="app" onclick="openWin('icons/calendar.jfif','Calendar - Android','apps/calendar/dist/index.html',80,90,0)">
+                <img src="icons/calendar.jfif" alt="" style="border-radius: 50%;">
+                <p>Calendar</p>
+            </div>
+            <div class="app" onclick="openWin('icons/home.png','Smart home','apps/home-dial/dist/index.html',80,90,0)">
+                <img src="icons/home.png" alt="">
+                <p>Smart home</p>
+            </div>
+          
+            <div class="app"onclick="openWin('icons/chrome.jfif','Google - Android','apps/google.html'80,90,0)">
+                <img src="icons/chrome.jfif" alt="" >
+                <p>Google</p>
+            </div>
+            <div class="app"onclick="openWin('icons/images (4).jpeg','Galaxy store - Android','apps/samsung.html',80,90)">
+                <img src="icons/images (4).jpeg" alt="">
+                <p>Galaxy store</p>
+            </div>
+            <div class="app"onclick="openWin('icons/instagram.png','Instagram - Android','apps/instagram/dist/index.html',85,90,0)">
+                <img src="icons/instagram.png" alt="">
+                <p>Instagram</p>
+            </div>
+<div class="app"onclick="openWin('icons/music.png','Music - Android','apps/musicapp/music.html',85,90,0)">
+                <img src="icons/music.png" alt="">
+                <p>Music</p>
+            </div>
+<div class="app"onclick="openWin('icons/meet.png','Meet - Android','apps/musicapp/meet.html',85,90,0)">
+                <img src="icons/meet.png" alt="">
+                <p>Meet</p>
+            </div>
+<div class="app"onclick="openWin('icons/images (5).jpeg','Game launcher - Android','apps/gamelauncher/dist/index.html',80,90,0)">
+                <img src="icons/images (5).jpeg" alt="">
+                <p>Game launcher</p>
+            </div>
+        </div>
+        <div class="title">
+            <p class="name">Recommended</p>
+            <p class="more">More</p>
+        </div>
+        <div class="recommended">
+            <div class="one press" onclick="openWin('icons/paint.png','Paint - Android','apps/pepaint/dist/index.html',80,90,0)">
+                <img src="icons/paint.png">
+                <p> Paint <br>Used 34min ago</p>
+            </div>
+            <div class="one press" onclick="openWin('icons/notepad.png','Notepad - Android','apps/notepad/dist/index.html',80,90,0)">
+                <img src="icons/notepad.png">
+                <p>Notepad <br>Used 1 hour ago</p>
+            </div>
+            <div class="one press" onclick="openWin('icons/cmd.png','Samsung - Android','apps/samsung-cmd/dist/index.html',80,90,0)">
+                <img src="icons/cmd.png">
+                <p>Samsung<br>Used 10min ago</p>
+            </div>
+            <div class="one press" onclick="openWin('icons/wifi.png','Wifi - Samsung','apps/Toast Notification to Detect Internet Connection/dist/index.html',85,90,0)">
+                <img src="icons/wifi.png">
+                <p>Wifi<br>Just Now</p>
+            </div>
+<div class="one press" onclick="openWin('icons/twitter.png','Twitter - Android','apps/twitter/dist/index.html',80,90,0)">
+                <img src="icons/twitter.png">
+                <p>Twitter<br>Just Now</p>
+            </div>
+<div class="one press" onclick="openWin('icons/movie.png','Movie - Android','apps/vueflixvue-streaming-app/dist/index.html',80,90)">
+                <img src="icons/movie.png">
+                <p>Movie<br>Just Now</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="name">
+                <img src="img/chota.jpg" class="profile">
+                <p>Ansh</p>
+            </div>
+            <div>
+                <img src="icons/sleep.jpg" class="icon power" onclick="window.location.assign('sleep.html')">
+        </div>
+ <div>
+                <img src="icons/shutdown.jpg" class="icon power" onclick="window.location.assign('shutdown.html')">
+        </div>
+ <div>
+                <img src="icons/restart.jpg" class="icon power" onclick="window.location.assign('restart.html')">
+        </div>
+    </div>
+</div>
+                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+    <div class="content">
+<appDIv1>
+        <img src="icons/edge.jpg"onclick="openWin('icons/edge.jpg','Edge - Android','apps/edge/index.html',80,90,0)">
+ <img src="icons/study.png" onclick="openWin('icons/study.png','Study - Android','apps/study/index.html',80,90,0)">
+        <img src="icons/notes.png" onclick="openWin('icons/notes.png','Notes - Android','apps/notes/index.html',80,90,0)">
+        <img src="icons/english.png" onclick="openWin('icons/english.png','English Books - Android','apps/english/index.html',80,90,0)">
+        <img src="icons/weather.png" onclick="openWin('icons/weather.png','Weather - Android','apps/weather/index.html',80,90,0)">
+        <img src="icons/calendar.jfif" onclick="openWin('icons/calendar.jfif','Calendar - Android','apps/calendar/dist/index.html',80,90,0)">
+        <img src="icons/calculator1.png" onclick="openWin('icons/calculator1.png','Calculator - Android','apps/daily-ui-004-calculator/dist/index.html',80,90,0)">
+        <img src="icons/images(2).jpeg" onclick="openWin('icons/images(2).jpeg','Contacts - Android','apps/contacts.html',85,90,0)">
+        <img src="icons/download(2).jpg"onclick="openWin('icons/download(2).jpg','Gallery - Android','apps/gallery/dist/index.html',85,90,0)">
+        <img src="icons/chrome.jfif"onclick="openWin('icons/chrome.jfif','Google - Android','apps/google.html',80,90,0)">
+        <img src="icons/images (4).jpeg"onclick="openWin('icons/images (4).jpeg','Galaxy store - Android','apps/samsung.html',80,90,0)">
+        <img src="icons/files.png" onclick="openWin('icons/files.png','Calendar - Android','apps/',80,90,0)">
+        <img src="icons/edge.jpg"onclick="openWin('icons/edge.jpg','Edge - Android','apps/edge/index.html',80,90,0)">
+        </appDIv1>
+         </div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <img src="icons/start.webp" alt="icon" onclick="swStart()">
+        <img src="icons/study.png" onclick="openWin('icons/study.png','Google Drive - Android','apps/Google Drive.html',80,90,0)">
+        <img src="icons/notes.png" onclick="openWin('icons/notes.png','Notes - Android','apps/notes/index.html',80,90,0)">
+        <img src="icons/english.png" onclick="openWin('icons/english.png','Microsoft excel - Android','apps/Microsoft Excel.html',80,90,0)">
+        <img src="icons/weather.png" onclick="openWin('icons/weather.png','Microsoft Word - Android','apps/Microsoft Word.html',80,90,0)">
+        <img src="icons/calendar.jfif" onclick="openWin('icons/calendar.jfif','One drive - Android','apps/One drive.html',80,90,0)">
+        <img src="icons/calculator1.png" onclick="openWin('icons/calculator1.png','One note - Android','apps/One note.html',80,90,0)">
+        <img src="icons/images(2).jpeg" onclick="openWin('icons/images(2).jpeg','Contacts - Android','apps/contacts.html',85,90,0)">
+        <img src="icons/download(2).jpg"onclick="openWin('icons/download(2).jpg','Gallery - Android','apps/gallery/dist/index.html',85,90,0)">
+        <img src="icons/chrome.jfif"onclick="openWin('icons/chrome.jfif','Google - Android','apps/google.html',80,90,0)">
+        <img src="icons/images (4).jpeg"onclick="openWin('icons/images (4).jpeg','Galaxy store - Android','apps/samsung.html',80,90,0)">
+        <img src="icons/files.png" onclick="openWin('icons/files.png','You Tube - Android','apps/You Tube.html',80,90,0)">
+        <img src="icons/edge.jpg"onclick="openWin('icons/edge.jpg','Edge - Android','apps/edge/index.html',80,90,0)">
+        <a href="#popup1"><img src="https://www.freeiconspng.com/uploads/up-arrow-png-8.png" style="width:20px;height:20px;margin-left:1140.7%;"></a>
+    </footer>
+    <script src="start.js"></script>
+    <script src="js/window.js"></script>
+</body>
+<script>
+    var element_pos = 0;    // POSITION OF THE NEWLY CREATED ELEMENTS.
+    var iCnt = 0;
+    $(document).ready(function() {
+$(function() { $("header"); });
+        $(function() { $("#window").draggable().resizable(); });
+               
+        // CREATE MORE DIV, WITH 'ABSOLUTE' POSITIONING.
+        $('#btClickMe').click(function() {
+            var dynamic_div = $(document.createElement('div')).css({
+                border: '1px dashed', position: 'absolute', left: element_pos, 
+                top: $('#divContainer').height() + 20,
+                width: '120', height: '120', padding: '3', margin: '0'
+            });
+            element_pos = element_pos + $('#divContainer').width() + 20;
+            $(dynamic_div).append('You can drag me too');
+            
+            // APPEND THE NEWLY CREATED DIV TO "divContainer".
+            $(dynamic_div).appendTo('header').draggable();
+            iCnt = iCnt + 1;
+        });
+    });
+</script>
+</html>
